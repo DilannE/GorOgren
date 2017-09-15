@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GorOgren</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="kayit">KAYDOL</string>
+    <string name="auth_failed">FAİLED</string>
+    <string name="giris">GİRİŞ</string>
+    <string name="uye_girisi">Zaten Kayıtlı Mısın?</string>
+</resources>

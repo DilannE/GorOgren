@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "544423121015",
+    "firebase_url": "https://gorogren-1d15b.firebaseio.com",
+    "project_id": "gorogren-1d15b",
+    "storage_bucket": "gorogren-1d15b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544423121015:android:76d0acabf8f5a053",
+        "android_client_info": {
+          "package_name": "com.example.nigre.gorogren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544423121015-9ls42sugp4dibi92tpk9j6uja232899v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nigre.gorogren",
+            "certificate_hash": "3ec4edf283459ff7c6d725b4b36d34873b6bf55f"
+          }
+        },
+        {
+          "client_id": "544423121015-cfkmj49965d4cvofupmkumum2cojg805.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbY_-bw5IQvt2SCshS4MJGxRp67ibrl1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544423121015-cfkmj49965d4cvofupmkumum2cojg805.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
