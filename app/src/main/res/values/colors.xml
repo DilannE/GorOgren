@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="GirisBackground">#330033</color>
+    <color name="yaziRengi">#ffff99</color>
+    <color name="yaziRengi2">#0066ff</color>
+    <color name="yaziRengi3">#ff6666</color>
+
 </resources>

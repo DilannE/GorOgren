@@ -3,7 +3,13 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center">
+              android:gravity="center"
+              android:background="@color/GirisBackground">
+    <ImageView
+        android:src="@mipmap/notepad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,13 +18,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kullanıcı Adı"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+
+            />
         <EditText
             android:id="@+id/et_kullanici_adi_kaydol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:hint="Lüften Kullanıcı Adı Giriniz..."
+            android:textColorHint="@color/yaziRengi3"
             />
     </LinearLayout>
 
@@ -30,13 +40,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Parola"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"/>
         <EditText
+            android:textColorHint="@color/yaziRengi3"
             android:id="@+id/et_kullanici_parola_kaydol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Lüften Parolanızı Giriniz..."
-            android:padding="16dp"/>
+            android:padding="16dp"
+
+            />
     </LinearLayout>
 
     <Button
@@ -44,13 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/kayit"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/yaziRengi2"
         />
-    <Button
-        android:id="@+id/btn_kayit_uyeGirisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/uye_girisi"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"/>
+
 </LinearLayout>

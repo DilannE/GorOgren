@@ -8,5 +8,5 @@
     <string name="kayit">KAYDOL</string>
     <string name="auth_failed">FAİLED</string>
     <string name="giris">GİRİŞ</string>
-    <string name="uye_girisi">Zaten Kayıtlı Mısın?</string>
+    <string name="uye_girisi">Kaydol!</string>
 </resources>

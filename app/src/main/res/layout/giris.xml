@@ -3,7 +3,39 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center">
+              android:gravity="center"
+              android:background="@color/GirisBackground"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/think"
+            android:layout_weight="2"
+            android:padding="24dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/learning"
+            android:layout_weight="1"
+            android:padding="24dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/thinking"
+            android:layout_weight="1"
+            android:padding="24dp"
+            />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,13 +44,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kullanıcı Adı"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"/>
         <EditText
             android:id="@+id/et_kullanici_adi_giris"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:hint="Lüften Kullanıcı Adı Giriniz..."
+            android:textColorHint="@color/yaziRengi3"
             />
     </LinearLayout>
 
@@ -30,20 +64,56 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Parola"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"/>
         <EditText
             android:id="@+id/et_kullanici_parola_giris"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Lüften Parolanızı Giriniz..."
+            android:textColorHint="@color/yaziRengi3"
             android:padding="16dp"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_giris"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/giris"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_giris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/giris"
+            android:textColor="@color/yaziRengi2"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_kaydol_girisPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uye_girisi"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi2"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="26dp"
+        android:text="Şifreni mi Unuttun?"
+        android:textStyle="bold"
+        android:textColor="@color/yaziRengi"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEYA"
+        android:textStyle="bold"
+        android:textColor="@color/yaziRengi"
+       />
+
+
 
 </LinearLayout>
