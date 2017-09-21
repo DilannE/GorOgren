@@ -16,6 +16,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.nigre.gorogren.NavDrawerFragments.AlistirmalarFragment;
+import com.example.nigre.gorogren.NavDrawerFragments.AnaSayfaFragment;
+import com.example.nigre.gorogren.NavDrawerFragments.ArkadaslarFragment;
+import com.example.nigre.gorogren.NavDrawerFragments.ProfilFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

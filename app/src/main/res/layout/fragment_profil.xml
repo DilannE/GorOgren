@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        app:siBorderWidth="6dp"
+        app:siBorderColor="@color/yaziRengi3"
+        android:src="@mipmap/avataruser"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@mipmap/question"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="14dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="16dp"
+        />
+
     <TextView
+        android:id="@+id/txt_ad_soyad"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profilimiz"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:id="@+id/btn_cikis_yap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:text="@string/cikis"/>
 </RelativeLayout>

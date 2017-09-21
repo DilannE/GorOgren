@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:background="@color/GirisBackground"
               android:gravity="center"
-              android:background="@color/GirisBackground">
-    <ImageView
-        android:src="@mipmap/notepad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="24dp"/>
+    >
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        app:siBorderWidth="6dp"
+        app:siBorderColor="@color/colorPrimary"
+        android:src="@mipmap/avataruser"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView_kullanici_fotografi"
+        />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +24,51 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kullanıcı Adı"
+            android:text="Ad"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+
+            />
+        <EditText
+            android:id="@+id/et_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lüften Adınızı Giriniz..."
+            android:textColorHint="@color/yaziRengi3"
+
+
+            />
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soyad"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+
+            />
+        <EditText
+            android:id="@+id/et_soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lüften Soyadınızı Giriniz..."
+            android:textColorHint="@color/yaziRengi3"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
             android:textStyle="bold"
             android:textColor="@color/yaziRengi"
 
@@ -27,8 +78,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:hint="Lüften Kullanıcı Adı Giriniz..."
+            android:hint="Lüften Email Adresinizi Giriniz..."
             android:textColorHint="@color/yaziRengi3"
+
             />
     </LinearLayout>
 
@@ -52,6 +104,36 @@
 
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Öğrenci Misin?"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+           />
+        <CheckBox
+            android:id="@+id/cb_ogrenciMisin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sınıf?"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"></TextView>
+        <Spinner
+            android:id="@+id/spn_siniflar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_kayit_kaydol"
@@ -59,6 +141,7 @@
         android:layout_height="wrap_content"
         android:text="@string/kayit"
         android:textColor="@color/yaziRengi2"
+        android:layout_gravity="center"
         />
 
 </LinearLayout>
