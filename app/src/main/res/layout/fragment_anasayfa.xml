@@ -3,12 +3,16 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="anasayfamız"/>
-    <TextView
-        android:id="@+id/deneme"
+
+    <fragment
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentDersler"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:name="com.example.nigre.gorogren.AnaSayfaFragment"/>
+
+
+
+
 </RelativeLayout>

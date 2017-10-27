@@ -15,14 +15,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
+import com.example.nigre.gorogren.Model.Dersler;
 import com.example.nigre.gorogren.NavDrawerFragments.AlistirmalarFragment;
 import com.example.nigre.gorogren.NavDrawerFragments.AnaSayfaFragment;
-import com.example.nigre.gorogren.NavDrawerFragments.ArkadaslarFragment;
+
 import com.example.nigre.gorogren.NavDrawerFragments.ProfilFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +55,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+
     }
 
     @Override
@@ -98,12 +110,7 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.content_frame,myFragment).commit();
-        } else if (id == R.id.nav_arkadaslar) {
-            Fragment myFragment = new ArkadaslarFragment();
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.replace(R.id.content_frame,myFragment).commit();
-        } else if (id == R.id.nav_alistirmalar) {
+        }else if (id == R.id.nav_alistirmalar) {
             Fragment myFragment = new AlistirmalarFragment();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();

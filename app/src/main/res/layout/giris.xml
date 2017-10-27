@@ -53,6 +53,7 @@
             android:padding="16dp"
             android:hint="Lüften Kullanıcı Adı Giriniz..."
             android:textColorHint="@color/yaziRengi3"
+            android:textColor="#F0F4C3"
             />
     </LinearLayout>
 
@@ -64,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Parola"
+
             android:textStyle="bold"
             android:textColor="@color/yaziRengi"/>
         <EditText
@@ -72,6 +74,7 @@
             android:layout_height="wrap_content"
             android:hint="Lüften Parolanızı Giriniz..."
             android:textColorHint="@color/yaziRengi3"
+            android:textColor="#F0F4C3"
             android:padding="16dp"/>
     </LinearLayout>
 
@@ -96,23 +99,7 @@
             android:textColor="@color/yaziRengi2"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="26dp"
-        android:text="Şifreni mi Unuttun?"
-        android:textStyle="bold"
-        android:textColor="@color/yaziRengi"
-        />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VEYA"
-        android:textStyle="bold"
-        android:textColor="@color/yaziRengi"
-       />
 
 
 

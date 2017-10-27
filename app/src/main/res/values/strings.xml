@@ -25,4 +25,5 @@
         <item>11.Sınıf</item>
         <item>12.Sınıf</item>
     </string-array>
+    <string name="soru1">soru sordum cevap ver?</string>
 </resources>

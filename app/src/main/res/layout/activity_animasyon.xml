@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_animasyon"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+
+android:paddingTop="16dp"
+
+tools:context="com.example.nigre.gorogren.AnimasyonActivity">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/txtAnimasyonAdi"
+
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Başla"
+    android:id="@+id/btnBasla"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="13dp"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Dur"
+    android:layout_below="@+id/btnBasla"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="13dp"
+    android:id="@+id/btnStop"
+    /></LinearLayout>
+
+<com.felipecsl.gifimageview.library.GifImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/giftImage"
+    android:layout_below="@+id/btnStop"/>
+
+</RelativeLayout>
